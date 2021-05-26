@@ -2,6 +2,7 @@
 def my_del(var_1, var_2):
     return round(var_1 / var_2, 2)
 
+
 a = float(input('Введите делимое '))
 # b = float(input('Введите делитель '))
 
@@ -11,9 +12,12 @@ else:
     print(f'Частное двух чисел равно {my_del(a,b)}')
 
 # Task 2
+
+
 def my_data(name, surname, date, place, email, tel_num):
     print(f'{name} {surname} {date} года рождения, город {place}, {email}, телефон: {tel_num}')
     return
+
 
 a = input('Введите имя ')
 b = input('Введите фамилию ')
@@ -49,6 +53,7 @@ while True:
 
 # Task 4.1
 
+
 def my_power(var_1, var_2):
     return round(var_1 ** var_2, 4)
 
@@ -65,13 +70,13 @@ b = int(input('Введите степень (целое отрицательн�
 
 
 def my_power(var_1, var_2):
-    c = 1
+    num = 1
 
     if var_2 >= 0:
         return 'Введите отрицательное число в качестве степени '
     for i in range(-1 * var_2):
-        c = c/var_1
-    return round(c, 4)
+        num = num/var_1
+    return round(num, 4)
 
 
 print(my_power(a, b))
@@ -85,6 +90,7 @@ def my_summ(num_list, current_sum):
         current_sum += int(el)
 
     return current_sum
+
 
 sum = 0
 
