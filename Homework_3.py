@@ -1,10 +1,12 @@
 # Task 1
+
+
 def my_del(var_1, var_2):
     return round(var_1 / var_2, 2)
 
 
 a = float(input('Введите делимое '))
-# b = float(input('Введите делитель '))
+b = float(input('Введите делитель '))
 
 if b == 0:
     print('Деление на ноль невозможно')
@@ -55,7 +57,7 @@ while True:
 
 
 def my_power(var_1, var_2):
-    return round(var_1 ** var_2, 4)
+    return round(var_1 ** var_2, 6)
 
 
 a = float(input('Введите число. a = '))
@@ -70,13 +72,13 @@ b = int(input('Введите степень (целое отрицательн�
 
 
 def my_power(var_1, var_2):
-    num = 1
+    c = 1
 
     if var_2 >= 0:
         return 'Введите отрицательное число в качестве степени '
     for i in range(-1 * var_2):
-        num = num/var_1
-    return round(num, 4)
+        c = c/var_1
+    return round(c, 6)
 
 
 print(my_power(a, b))
@@ -84,7 +86,7 @@ print(my_power(a, b))
 
 # Task 5
 
-def my_summ(num_list, current_sum):
+def my_sum(num_list, current_sum):
 
     for el in num_list:
         current_sum += int(el)
@@ -92,20 +94,21 @@ def my_summ(num_list, current_sum):
     return current_sum
 
 
-sum = 0
+total = 0
 
 print('Введите ряд чисел через пробел')
 while True:
     user_input = input()
     elements = user_input.split()
-    if elements == [] or elements[0].title() == 'Stop':
-        print(f'Итоговая сумма: {sum}')
+    if elements[0].title() == 'Stop':
+        print(f'Итоговая сумма: {total}')
         break
-    sum = my_summ(elements, sum)
-    print(f'Промежуточная сумма: {sum}')
+    total = my_sum(elements, total)
+    print(f'Промежуточная сумма: {total}')
     print('Введите ещё числа, либо stop для выхода из программы')
 
 # Task 6
+
 
 def title_func(word):
     return word.title()
@@ -118,6 +121,7 @@ if elements != [] and elements[0].title() != 'Stop':
         elements[i] = title_func(elements[i])
     my_str = " ".join(elements)
     print(my_str)
+
 
 
 
