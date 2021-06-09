@@ -167,7 +167,7 @@ class Cell:
 
 
 one = Cell(15)
-two = Cell(7)
+two = Cell(4)
 print(one + two)
 print(one - two)
 print(one * two)
